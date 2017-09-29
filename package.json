@@ -1,0 +1,50 @@
+{
+  "name": "riotjs",
+  "version": "1.0.0",
+  "description": "riotjs for im",
+  "main": "boot.js",
+  "scripts": {
+    "test": "node ./rollup.config.js"
+  },
+  "keywords": [
+    "riot",
+    "js"
+  ],
+  "author": "gaoyangyang",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-register": "^6.24.1",
+    "chai": "^3.5.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "nyc": "^10.0.0",
+    "riot": "^3.6.1",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-standalone": "^0.42.9",
+    "standard": "^8.5.0",
+    "watch-cli": "^0.2.1"
+  },
+  "ava": {
+    "require": "babel-register",
+    "babel": "inherit"
+  },
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs",
+      [
+        "transform-object-rest-spread",
+        {
+          "useBuiltIns": true
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "sav-util": "^1.0.23"
+  }
+}
