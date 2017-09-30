@@ -1,6 +1,6 @@
-<todo>
+<list>
   <div class="todolist">
-    <h4>TODO LIST<i>(create times {count})</i></h4>
+    <h4>LIST<i>(create times {count})</i></h4>
     <ul>
       <li each={child in todoList}>
         <label>
@@ -23,4 +23,4 @@
       })
     }
   </script>
-</todo>
+</list>
