@@ -1,7 +1,7 @@
 import {Flux, FluxRiot} from 'sav-flux'
 import riot from 'riot/riot+compiler'
-import todoModule from './store'
-
+import todoModule from './store/store'
+import http from './http'
 
 let flux = new Flux({
   strict: true
@@ -16,6 +16,6 @@ console.log(riot)
 riot.compile(function() {
   riot.mount('*')
 })
-
+riot.http = http
 window.riot = riot
 window.flux = flux

@@ -2,7 +2,7 @@ const {executeRollup} = require('rollup-standalone')
 
 module.exports = executeRollup({
   entry: './boot.js',
-  dest: 'bundle.js',
+  dest: 'dist/app.js',
   format: 'iife',
   commonjsOptions: {
     include: [

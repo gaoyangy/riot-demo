@@ -22,5 +22,6 @@
         this.count++
       })
     }
+    riot.http()
   </script>
 </todo>

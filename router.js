@@ -4,6 +4,7 @@
     hashchange: 'onhashchange' in window
   }
   let PageTree = [
+    {page:'', tag:['todo']},
     {page:'/page1', tag:['todo','list']},
     {page:'/page2', tag:['list']}
   ]
@@ -23,9 +24,9 @@
   // 路由发生变化
   this.lastUrl = this.newUrl;
   PageTree.forEach(url => {
-    if(location.hash === '#'+ url.page) {
+    let app = document.querySelector("#app")
+    if(location.hash === '#'+ url.page || location.hash === url.page) {
       console.log(url.page)
-      let app = document.querySelector("#app")
       var head= document.getElementsByTagName('head')[0]
       url.tag.forEach(tag => {
         var template= document.createElement('div');
@@ -35,12 +36,20 @@
         script.type= 'riot/tag' 
         script.src= `./tag/${tag}.tag`
         head.appendChild(script)
-      })
-      //
+      }, file)
       var src=document.querySelector("script");
       //head.removeChild(src);
       //
     }
+    //
+    function file (result,app) {
+      if (!result) {
+        // app.innerHTML = 'NO found'
+      } else {
+        //app.innerHTML = 'loading'
+      }
+    }
+    //
   })
   }
 })()
