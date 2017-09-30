@@ -18,7 +18,7 @@
     });
     window.onpopstate=function(){
       fireUrlChange();
-      location.reload()  
+      location.reload() 
     }
   function fireUrlChange () {
   // 路由发生变化

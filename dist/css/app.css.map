@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "app.css",
+	"sources": [
+		"../../sass/app.sass",
+		"../../sass/tag/todo.sass"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAY,SAAH,GAAG,EAAE,CAAC;EACb,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,IAAI;CAGA;;AANxB,AAImB,SAJV,GAAG,EAAE,CAIZ,SAAS,GAAG,EAAE,GAAG,CAAC,CAAC;EACjB,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,OAAO;CAAI"
+}

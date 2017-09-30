@@ -19,7 +19,9 @@ export default function getJSON(method,url,data) {
               }  
           }  
       }
-      XHR.send(JSON.stringify(data));  
+      if (data) {
+        XHR.send(JSON.stringify(data));  
+      }
   }).then().catch(e => {
     console.log(e)
   })  

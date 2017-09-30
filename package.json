@@ -4,6 +4,7 @@
   "description": "riotjs for im",
   "main": "boot.js",
   "scripts": {
+    "build-sass": "node ./build-sass",
     "test": "node ./rollup.config.js"
   },
   "keywords": [
@@ -21,6 +22,7 @@
     "babel-register": "^6.24.1",
     "chai": "^3.5.0",
     "eslint-plugin-standard": "^2.0.1",
+    "node-sass": "^4.5.3",
     "nyc": "^10.0.0",
     "riot": "^3.6.1",
     "rollup": "^0.41.4",
